@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        
+        print("currency converter completed")
     }
 
     @IBAction func btnGetRatesClicked(_ sender: Any)
