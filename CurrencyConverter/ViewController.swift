@@ -91,32 +91,6 @@ class ViewController: UIViewController {
          
           }
             
-            /*
-            if data != nil
-            {
-                do {
-                    let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String,Any>
-                    
-                    // ASYNC
-                    
-                    DispatchQueue.main.async {
-                        if let rates = jsonResponse["rates"] as? [String : Any]
-                        {
-                            //print(rates)
-                            if let cad = rates["CAD"] as? Double
-                            {
-                                self.lblCad.text = String(cad)
-                            }
-                        }
-                    }
-                }
-                catch
-                {
-                    print("error")
-                }
- 
-            }
-             */
             
            }
         
