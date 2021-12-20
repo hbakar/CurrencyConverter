@@ -25,7 +25,6 @@ class ViewController: UIViewController {
 
     @IBAction func btnGetRatesClicked(_ sender: Any)
     {
-        
         let URL = URL(string: "http://data.fixer.io/api/latest?access_key=4a990ae1cc0ef5a920e4c7e9eeb1123c")!
         
         URLSession.shared.dataTask(with: URL)
@@ -46,7 +45,7 @@ class ViewController: UIViewController {
          {
             do
             {
-                let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String,Any>
+                let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String, Any>
                
                 DispatchQueue.main.async {
                     
